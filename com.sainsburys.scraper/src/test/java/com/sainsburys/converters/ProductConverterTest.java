@@ -1,6 +1,7 @@
 package com.sainsburys.converters;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -12,7 +13,6 @@ import org.junit.Test;
 import com.sainsburys.model.PageProduct;
 import com.sainsburys.model.ProductPageData;
 import com.sainsburys.model.ProductViewContainer;
-import com.sainsburys.model.ProductViewModel;
 import com.sainsburys.model.ViewModel;
 
 public class ProductConverterTest {

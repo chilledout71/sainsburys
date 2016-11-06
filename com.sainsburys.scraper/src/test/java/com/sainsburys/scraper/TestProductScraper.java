@@ -3,7 +3,7 @@
  */
 package com.sainsburys.scraper;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -13,7 +13,6 @@ import org.jsoup.nodes.Document;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sainsburys.model.PageData;
 import com.sainsburys.model.ProductPageData;
 
 /**

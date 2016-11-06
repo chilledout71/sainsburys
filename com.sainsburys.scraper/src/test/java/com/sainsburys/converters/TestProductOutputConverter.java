@@ -3,20 +3,18 @@
  */
 package com.sainsburys.converters;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import com.sainsburys.model.ProductViewContainer;
 import com.sainsburys.model.ProductViewModel;
-import com.sainsburys.model.ViewModel;
 
 /**
  * @author leeharris

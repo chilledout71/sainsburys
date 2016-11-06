@@ -2,10 +2,6 @@ package com.sainsburys.scraper;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 
 import org.jsoup.Jsoup;
