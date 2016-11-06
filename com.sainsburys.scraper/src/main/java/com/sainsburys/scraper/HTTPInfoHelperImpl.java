@@ -14,7 +14,7 @@ public class HTTPInfoHelperImpl implements HTTPInfoHelper {
 	 * @param link
 	 * @return
 	 */
-	public int getLinkedDocumentSize(String link) {
+	public int getSize(String link) {
 		URL url;
 		try {
 			url = new URL(link);

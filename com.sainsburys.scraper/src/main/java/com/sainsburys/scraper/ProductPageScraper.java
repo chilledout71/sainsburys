@@ -44,7 +44,7 @@ public class ProductPageScraper implements PageScraper{
 			
 			
 			pageProduct.setDescription(getHTMLDocument(link).getElementsByAttributeValue("name","description").attr("content"));
-			pageProduct.setSize(httpInfoHelper.getLinkedDocumentSize(link));
+			pageProduct.setSize(httpInfoHelper.getSize(link));
 			pageProduct.setUnitPrice(new BigDecimal(row.getElementsByClass("pricePerUnit").text().replaceAll("\\D","")).divide(new BigDecimal(100)));
 			productList.add(pageProduct);
 		}

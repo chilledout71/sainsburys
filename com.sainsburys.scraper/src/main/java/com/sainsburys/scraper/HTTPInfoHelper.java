@@ -7,6 +7,6 @@ public interface HTTPInfoHelper {
 	 * @param link
 	 * @return
 	 */
-	public int getLinkedDocumentSize(String link);
+	public int getSize(String link);
 
 }

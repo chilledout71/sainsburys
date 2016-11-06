@@ -45,7 +45,7 @@ public class TestProductScraper {
 	HTTPInfoHelper httpHelper= new HTTPInfoHelper() {
 		
 		@Override
-		public int getLinkedDocumentSize(String link) {
+		public int getSize(String link) {
 			
 			return 2354;
 		}
