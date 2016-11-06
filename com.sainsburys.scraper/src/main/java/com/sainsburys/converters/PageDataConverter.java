@@ -3,7 +3,7 @@ package com.sainsburys.converters;
 import com.sainsburys.model.PageData;
 import com.sainsburys.model.ViewModel;
 /**
- * converts a pageData objects
+ * converts a pageData object
  * @author leeharris
  *
  */

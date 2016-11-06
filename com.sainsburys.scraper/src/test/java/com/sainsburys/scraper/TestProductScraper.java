@@ -13,7 +13,7 @@ import org.jsoup.nodes.Document;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sainsburys.model.ProductPageData;
+import com.sainsburys.model.product.ProductPageData;
 
 /**
  * @author leeharris

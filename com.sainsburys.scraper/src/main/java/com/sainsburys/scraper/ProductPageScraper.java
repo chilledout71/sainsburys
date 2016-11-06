@@ -12,8 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.sainsburys.model.PageData;
-import com.sainsburys.model.PageProduct;
-import com.sainsburys.model.ProductPageData;
+import com.sainsburys.model.product.PageProduct;
+import com.sainsburys.model.product.ProductPageData;
 @Component
 public class ProductPageScraper implements PageScraper{
 

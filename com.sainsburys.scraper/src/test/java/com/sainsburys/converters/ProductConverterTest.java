@@ -10,10 +10,10 @@ import java.util.ArrayList;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.sainsburys.model.PageProduct;
-import com.sainsburys.model.ProductPageData;
-import com.sainsburys.model.ProductViewContainer;
 import com.sainsburys.model.ViewModel;
+import com.sainsburys.model.product.PageProduct;
+import com.sainsburys.model.product.ProductPageData;
+import com.sainsburys.model.product.ProductViewContainer;
 
 public class ProductConverterTest {
 

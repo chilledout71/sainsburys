@@ -1,6 +1,8 @@
-package com.sainsburys.model;
+package com.sainsburys.model.product;
 
 import java.util.List;
+
+import com.sainsburys.model.PageData;
 
 /**
  * object to contain the product data from the HTML
