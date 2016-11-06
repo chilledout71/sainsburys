@@ -30,7 +30,7 @@ public class ProductConverterTest {
 	pageProduct1.setDescription("description1");
 	pageProduct1.setSize(23456);
 	pageProduct1.setTitle("title1");
-	pageProduct1.setUnitPrice("1.80");
+	pageProduct1.setUnitPrice(new BigDecimal(1.80));
 	pageList.add(pageProduct1);
 	
 	
@@ -38,7 +38,7 @@ public class ProductConverterTest {
 	pageProduct2.setDescription("description2");
 	pageProduct2.setSize(12347);
 	pageProduct2.setTitle("title2");
-	pageProduct2.setUnitPrice("2.80");
+	pageProduct2.setUnitPrice(new BigDecimal(2.80));
 	pageList.add(pageProduct2);
 	productPage.setProducts(pageList);
 	

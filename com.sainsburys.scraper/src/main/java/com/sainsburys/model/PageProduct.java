@@ -1,4 +1,7 @@
 package com.sainsburys.model;
+
+import java.math.BigDecimal;
+
 /**
  * model that represents a Page Product
  * @author leeharris
@@ -8,7 +11,7 @@ public class PageProduct {
 
 	private String title;
 	private int size;
-	private String unitPrice;
+	private BigDecimal unitPrice;
 	private String description;
 	public String getTitle() {
 		return title;
@@ -22,10 +25,10 @@ public class PageProduct {
 	public void setSize(int size) {
 		this.size = size;
 	}
-	public String getUnitPrice() {
+	public BigDecimal getUnitPrice() {
 		return unitPrice;
 	}
-	public void setUnitPrice(String unitPrice) {
+	public void setUnitPrice(BigDecimal unitPrice) {
 		this.unitPrice = unitPrice;
 	}
 	public String getDescription() {

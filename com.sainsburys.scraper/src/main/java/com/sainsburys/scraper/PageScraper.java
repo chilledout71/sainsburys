@@ -1,5 +1,7 @@
 package com.sainsburys.scraper;
 
+import org.jsoup.nodes.Document;
+
 import com.sainsburys.model.PageData;
 /**
  * Object to scrape HTML from a website
@@ -14,4 +16,6 @@ public interface PageScraper {
  * @return
  */
 	PageData scrapePage(String url);
+	
+	
 }

@@ -27,16 +27,16 @@ public class ProductConverter implements PageDataConverter {
 			
 			viewProduct.setDescription(pageProduct.getDescription());
 			viewProduct.setTitle(pageProduct.getTitle());
-			viewProduct.setUnitPrice(new BigDecimal(pageProduct.getUnitPrice()).setScale(2, RoundingMode.HALF_EVEN));
+			viewProduct.setUnitPrice(pageProduct.getUnitPrice().setScale(2, RoundingMode.HALF_EVEN));
 			viewProduct.setSize(new BigDecimal(pageProduct.getSize()).divide(new BigDecimal(1024)).setScale(2,RoundingMode.HALF_EVEN) + "kb");
 			
 			viewProductList.add(viewProduct);
-			total= total.add(new BigDecimal(pageProduct.getUnitPrice()));
+			total= total.add(pageProduct.getUnitPrice());
 			
 			
 		}
 		container.setResults(viewProductList);
-		container.setTotal(total);
+		container.setTotal(total.setScale(2,RoundingMode.HALF_EVEN));
 		
 		return container;
 	}

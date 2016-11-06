@@ -7,6 +7,8 @@ import static org.junit.Assert.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.After;
 import org.junit.Before;
@@ -37,6 +39,7 @@ public class TestProductOutputConverter {
 	@Test
 	public void testToJson() {
 
+		List<ProductViewModel> productViewList = new ArrayList<ProductViewModel>(2);
 		ProductViewModel model = new ProductViewModel();
 		model.setDescription("this is the description");
 		model.setSize("234.6kb");
@@ -45,7 +48,9 @@ public class TestProductOutputConverter {
 				RoundingMode.HALF_EVEN));
 
 		ProductViewContainer container = new ProductViewContainer();
-		container.getResults().add(model);
+	
+		
+		productViewList.add(model);
 
 		ProductViewModel model2 = new ProductViewModel();
 		model2.setDescription("this is the description2");
@@ -54,10 +59,12 @@ public class TestProductOutputConverter {
 		model2.setUnitPrice(new BigDecimal(2.8).setScale(2,
 				RoundingMode.HALF_EVEN));
 
-		container.getResults().add(model2);
+		productViewList.add(model2);
+		
 		container.setTotal(new BigDecimal(4.6).setScale(2,
 				RoundingMode.HALF_EVEN));
-
+		
+		container.setResults(productViewList);
 		ProductOutputConverter converter = new ProductOutputConverter();
 		assertEquals(
 				"{\n"
