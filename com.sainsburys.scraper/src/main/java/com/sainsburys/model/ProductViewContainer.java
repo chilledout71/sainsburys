@@ -1,7 +1,6 @@
 package com.sainsburys.model;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ProductViewContainer extends ViewModel {
@@ -10,9 +9,7 @@ public class ProductViewContainer extends ViewModel {
 	private BigDecimal total;
 
 	public List<ProductViewModel> getResults() {
-		if (results==null){
-			results= new ArrayList<ProductViewModel>();
-		}
+	
 		return results;
 	}
 
@@ -22,6 +19,10 @@ public class ProductViewContainer extends ViewModel {
 
 	public void setTotal(BigDecimal total) {
 		this.total = total;
+	}
+
+	public void setResults(List<ProductViewModel> results) {
+		this.results = results;
 	}
 
 	
